@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora TS</title>
+    <script src="calculadora.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora simple en TS</h1>
+    <br>
+    <h2>En la operación de división ten en cuenta que el primer número será el numerador y el segundo el denominador.
+    </h2>
+    <form>
+        Número 1: <input id="num1" type="number" />
+        Número 2: <input id="num2" type="number" />
+        <h1 id="resultado" style="color: green;"></h1>
+        <br /><br />
+        <div class="boton-flex">
+            <input type="button" value="SUMAR" onclick="operaciones('sumar'); return false;" /><br />
+            <input type="button" value="RESTAR" onclick="operaciones('restar'); return false;" /><br />
+            <input type="button" value="MULTIPLICAR" onclick="operaciones('multiplicar'); return false;" /><br />
+            <input type="button" value="DIVIDIR" onclick="operaciones('dividir'); return false;" />
+        </div>
+
+    </form>
+</body>
+
+</html>
